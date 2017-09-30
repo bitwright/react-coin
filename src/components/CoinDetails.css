@@ -78,12 +78,6 @@
             font-size: 30px !important; } }
       .selected-section .information-section .price-section .market-cap-price-amount {
         display: inline-block !important; }
-      .selected-section .information-section .price-section .doughnut-chart {
-        display: block !important;
-        text-align: center !important;
-        font-weight: 500 !important;
-        width: 50px !important;
-        margin: 0 auto !important; }
 
 .tooltip {
   position: relative !important;
@@ -107,24 +101,6 @@
     top: 100% !important;
     left: 50% !important;
     margin-left: -60px !important; }
-
-.doughnut-tooltip .tooltiptext {
-  top: 110% !important; }
-
-.hide {
-  display: none !important; }
-
-.show {
-  display: block !important; }
-
-.no-padding {
-  padding: 0px !important; }
-
-.transparent {
-  background-color: transparent !important; }
-
-.font-white {
-  color: #fff !important; }
 
 ::-webkit-scrollbar {
   -webkit-appearance: none;

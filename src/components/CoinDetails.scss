@@ -125,14 +125,6 @@ $large: 1024px;
       .market-cap-price-amount {
         display: inline-block !important;
       }
-
-      .doughnut-chart {
-        display: block !important;
-        text-align: center !important;
-        font-weight: 500 !important;
-        width: 50px !important;
-        margin: 0 auto !important;
-      }
     }
   }
 }
@@ -164,32 +156,6 @@ $large: 1024px;
     left: 50% !important;
     margin-left: -60px !important;
   }
-}
-
-.doughnut-tooltip {
-  .tooltiptext {
-    top: 110% !important;
-  }
-}
-
-.hide {
-  display: none !important;
-}
-
-.show {
-  display: block !important;
-}
-
-.no-padding {
-  padding: 0px !important;
-}
-
-.transparent {
-  background-color: transparent !important;
-}
-
-.font-white {
-  color: #fff !important;
 }
 
 ::-webkit-scrollbar {
