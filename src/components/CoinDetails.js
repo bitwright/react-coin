@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import * as actions from "../actions";
+import { Doughnut } from "react-chartjs-2";
 import coinData from "../coin-data.json";
 import "./CoinDetails.css";
 
@@ -32,7 +33,8 @@ class CoinDetails extends Component {
       marketCap,
       supply,
       symbol,
-      percentMarketCap
+      percentMarketCap,
+      chartMeta
     } = selectedCoin;
 
     return (
@@ -100,9 +102,7 @@ class CoinDetails extends Component {
             <p className="price-tag">Market Cap</p>
             <div className="price-amount market-cap-price-amount">
               ${marketCap}
-              <div className="doughnut-chart doughnut-tooltip tooltip">
-                <span className="tooltiptext">{percentMarketCap}% of the Global Cryptocurrency Market Cap</span>
-              </div>
+              <Doughnut data={chartMeta} width={125} height={60} />
             </div>
           </div>
         </div>
@@ -136,6 +136,16 @@ class CoinDetails extends Component {
     coin.percentMarketCap = Math.round(
       coin.market_cap_usd / this.props.global.total_market_cap_usd * 100
     );
+    coin.chartMeta = {
+      labels: ["Global Market Cap (USD)", `${coin.name} Market Cap`],
+      datasets: [
+        {
+          data: [this.props.global.total_market_cap_usd, coin.market_cap_usd],
+          backgroundColor: ["#03D2B3", "#008dff"],
+          hoverBackgroundColor: ["#03D2B3", "#008dff"]
+        }
+      ]
+    };
   }
 }
 
