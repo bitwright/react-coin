@@ -1,0 +1,136 @@
+.selected-section {
+  position: relative !important;
+  align-items: center !important; }
+  @media screen and (max-width: 768px) {
+    .selected-section {
+      padding-top: 30px !important; } }
+  .selected-section .return-action {
+    position: absolute !important;
+    left: 30px !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    z-index: 10 !important; }
+    .selected-section .return-action .arrow-left {
+      padding-right: 5px !important; }
+    .selected-section .return-action .arrow-left-iframe {
+      color: #fd6721 !important; }
+    .selected-section .return-action .return-text {
+      font-size: 11px !important; }
+      @media screen and (max-width: 768px) {
+        .selected-section .return-action .return-text {
+          display: none !important; } }
+  .selected-section .return-action-iframe {
+    top: -10px !important; }
+  .selected-section .image-section {
+    position: relative !important; }
+    .selected-section .image-section .coin-image {
+      height: 200px !important; }
+    .selected-section .image-section .coin-title {
+      font-size: 20px !important;
+      font-weight: 600 !important; }
+    .selected-section .image-section .coin-description {
+      font-size: 14px !important;
+      line-height: 1.65 !important;
+      max-width: 450px !important;
+      display: block !important;
+      margin: 0 auto !important;
+      padding: 20px 0 30px !important; }
+      @media screen and (max-width: 768px) {
+        .selected-section .image-section .coin-description {
+          font-size: 12px !important;
+          max-width: 300px !important; } }
+    .selected-section .image-section .icons-section {
+      height: 0px !important; }
+      .selected-section .image-section .icons-section .icon {
+        margin: 0px 30px !important;
+        -o-transition: 0.5s !important;
+        -ms-transition: 0.5s !important;
+        -moz-transition: 0.5s !important;
+        -webkit-transition: 0.5s !important;
+        transition: 0.5s !important; }
+        .selected-section .image-section .icons-section .icon:hover {
+          color: #fd6721 !important; }
+  .selected-section .information-section {
+    position: relative !important;
+    padding-top: 25px !important; }
+    .selected-section .information-section .price-section {
+      text-align: left !important;
+      padding: 20px 0 !important; }
+      @media screen and (max-width: 768px) {
+        .selected-section .information-section .price-section {
+          text-align: center !important; } }
+      .selected-section .information-section .price-section .price-select-tag {
+        display: inline-block !important; }
+      .selected-section .information-section .price-section .price-amount {
+        font-size: 40px !important; }
+        .selected-section .information-section .price-section .price-amount .positive-percent-change {
+          color: #00d1b2 !important; }
+        .selected-section .information-section .price-section .price-amount .negative-percent-change {
+          color: #ff3860 !important; }
+        .selected-section .information-section .price-section .price-amount .percent-tooltip {
+          color: #fff !important;
+          text-align: center !important;
+          font-size: 10px !important;
+          font-weight: 500 !important;
+          cursor: initial !important; }
+        @media screen and (max-width: 768px) {
+          .selected-section .information-section .price-section .price-amount {
+            font-size: 30px !important; } }
+      .selected-section .information-section .price-section .market-cap-price-amount {
+        display: inline-block !important; }
+      .selected-section .information-section .price-section .doughnut-chart {
+        display: block !important;
+        text-align: center !important;
+        font-weight: 500 !important;
+        width: 50px !important;
+        margin: 0 auto !important; }
+
+.tooltip {
+  position: relative !important;
+  display: inline-block !important;
+  border-bottom: 1px dotted black !important; }
+  .tooltip:hover .tooltiptext {
+    visibility: visible !important; }
+  .tooltip .tooltiptext {
+    visibility: hidden !important;
+    width: 120px !important;
+    background-color: #383838 !important;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    text-align: center !important;
+    border-radius: 6px !important;
+    padding: 5px 0 !important;
+    /* Position the tooltip */
+    position: absolute !important;
+    z-index: 1 !important;
+    top: 100% !important;
+    left: 50% !important;
+    margin-left: -60px !important; }
+
+.doughnut-tooltip .tooltiptext {
+  top: 110% !important; }
+
+.hide {
+  display: none !important; }
+
+.show {
+  display: block !important; }
+
+.no-padding {
+  padding: 0px !important; }
+
+.transparent {
+  background-color: transparent !important; }
+
+.font-white {
+  color: #fff !important; }
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px; }
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5); }

@@ -1,0 +1,204 @@
+$small: 590px;
+$medium: 768px;
+$large: 1024px;
+
+.selected-section {
+  position: relative !important;
+  align-items: center !important;
+
+  @media screen and (max-width: $medium) {
+    padding-top: 30px !important;
+  }
+
+  .return-action {
+    position: absolute !important;
+    left: 30px !important;
+    color: #fff !important;
+    cursor: pointer !important;
+    z-index: 10 !important;
+
+    .arrow-left {
+      padding-right: 5px !important;
+    }
+
+    .arrow-left-iframe {
+      color: #fd6721 !important;
+    }
+
+    .return-text {
+      font-size: 11px !important;
+
+      @media screen and (max-width: $medium) {
+        display: none !important;
+      }
+    }
+  }
+
+  .return-action-iframe {
+    top: -10px !important;
+  }
+
+  .image-section {
+    position: relative !important;
+
+    .coin-image {
+      height: 200px !important;
+    }
+
+    .coin-title {
+      font-size: 20px !important;
+      font-weight: 600 !important;
+    }
+
+    .coin-description {
+      font-size: 14px !important;
+      line-height: 1.65 !important;
+      max-width: 450px !important;
+      display: block !important;
+      margin: 0 auto !important;
+      padding: 20px 0 30px !important;
+
+      @media screen and (max-width: $medium) {
+        font-size: 12px !important;
+        max-width: 300px !important;
+      }
+    }
+
+    .icons-section {
+      height: 0px !important;
+
+      .icon {
+        margin: 0px 30px !important;
+        -o-transition: 0.5s !important;
+        -ms-transition: 0.5s !important;
+        -moz-transition: 0.5s !important;
+        -webkit-transition: 0.5s !important;
+        transition: 0.5s !important;
+
+        &:hover {
+          color: #fd6721 !important;
+        }
+      }
+    }
+  }
+
+  .information-section {
+    position: relative !important;
+    padding-top: 25px !important;
+
+    .price-section {
+      text-align: left !important;
+      padding: 20px 0 !important;
+
+      @media screen and (max-width: $medium) {
+        text-align: center !important;
+      }
+
+      .price-select-tag {
+        display: inline-block !important;
+      }
+
+      .price-amount {
+        font-size: 40px !important;
+
+        .positive-percent-change {
+          color: #00d1b2 !important;
+        }
+
+        .negative-percent-change {
+          color: #ff3860 !important;
+        }
+
+        .percent-tooltip {
+          color: #fff !important;
+          text-align: center !important;
+          font-size: 10px !important;
+          font-weight: 500 !important;
+          cursor: initial !important;
+        }
+
+        @media screen and (max-width: $medium) {
+          font-size: 30px !important;
+        }
+      }
+
+      .market-cap-price-amount {
+        display: inline-block !important;
+      }
+
+      .doughnut-chart {
+        display: block !important;
+        text-align: center !important;
+        font-weight: 500 !important;
+        width: 50px !important;
+        margin: 0 auto !important;
+      }
+    }
+  }
+}
+
+.tooltip {
+  position: relative !important;
+  display: inline-block !important;
+  border-bottom: 1px dotted black !important;
+
+  &:hover .tooltiptext {
+    visibility: visible !important;
+  }
+
+  .tooltiptext {
+    visibility: hidden !important;
+    width: 120px !important;
+    background-color: #383838 !important;
+    font-size: 11px !important;
+    font-weight: 500 !important;
+    color: #fff !important;
+    text-align: center !important;
+    border-radius: 6px !important;
+    padding: 5px 0 !important;
+
+    /* Position the tooltip */
+    position: absolute !important;
+    z-index: 1 !important;
+    top: 100% !important;
+    left: 50% !important;
+    margin-left: -60px !important;
+  }
+}
+
+.doughnut-tooltip {
+  .tooltiptext {
+    top: 110% !important;
+  }
+}
+
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.no-padding {
+  padding: 0px !important;
+}
+
+.transparent {
+  background-color: transparent !important;
+}
+
+.font-white {
+  color: #fff !important;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
